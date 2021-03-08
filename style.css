@@ -1,0 +1,35 @@
+
+.container{
+    width:40%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    background-color: orange;
+}
+
+
+
+.button-style2{
+padding:10px;
+background-color:rgb(42, 211, 70);
+font-weight: bold;
+border-radius: 10px;
+font-size: 1rem;
+
+
+}
+.form-style{
+    border-radius: 10px;
+    height:25px;
+    width: 300px;
+}
+#input-field{
+    display: none;
+    text-align: center;
+}
+#input-form{
+    display: none;
+}

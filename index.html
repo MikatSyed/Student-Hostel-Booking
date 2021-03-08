@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="login-area">
+        <h1> Student Hostel Booking</h1>
+      
+     <hr>
+     <h2>Log In</h2>
+     <form>
+         <h2> Name:<input type="text"  class="form-style"></h2>
+         <h2> Email:<input type="email"  class="form-style"></h2>
+         <h2>password:<input type="password" class="form-style" ></h2>
+         <input type="checkbox">I agree with <a href="">Terms and Services</a> & <a href="">Privacy Policy</a><br/><br/>
+         <button class="button-style2"id="login"  >Sing In</button>
+     
+     
+     </form>    
+    </div>
+
+
+
+    <div  id="input-field">
+
+        <button  id="form-input" class="button-style2">Add Product</button>
+        <button class="button-style2"> View Product</button>
+       </div>
+
+
+       <form id="input-form">
+        <div>
+         <h1 class="form-heading"> Enter Your Student Information and save here</h1>
+         <input type="name" placeholder="First Name" class=" form-style"><br/><br/>
+         <input  type="name" placeholder="Last Name" class="form-style" ><br/><br/>
+         <input  type="number" placeholder="Phone Number" class="form-style" ><br/><br/>
+         <input  type="number" placeholder="Student ID" class="form-style" ><br/><br/>
+         <input  type="number" placeholder="Password" class="form-style" ><br/><br/>
+    
+         <p class="np"><input type="checkbox">save your Information</p>
+         <button class="button3">Save</button>
+     </div>
+         
+     </form>
+
+
+
+
+
+<script>
+    const loginBtn = document.getElementById("login")
+    loginBtn.addEventListener( "click",function(event){
+        console.log("clicked me");
+        const loginArea = document.getElementById("login-area")
+        loginArea.style.display="none";
+        const inputFeild = document.getElementById("input-field");
+      inputFeild.style.display ="block";
+        event.preventDefault();
+    },false)
+
+    const formBtn= document.getElementById("form-input");
+                        formBtn.addEventListener("click",function(event){
+                            console.log("Clicked me");
+                            const inputField = document.getElementById("input-field")
+                            inputField.style.display ="none";
+
+                            const formInput = document.getElementById("input-form");
+                            formInput.style.display="block";
+                      
+
+            event.preventDefault();
+                        },false)
+</script>
+     
+</body>
+</html>
